@@ -26,11 +26,11 @@ The code for this program is split into 3 main classes as follows.
 	   	4. Sort the nodes Alphabetically so they can be BinarySearched*
 	   	5. Create adj-lists from roads
 		6. If the user wants to compute directions,
-			a. Execute Dijkstra's algorithm
-			b. Print out the resulting information
+			- Execute Dijkstra's algorithm
+			- Print out the resulting information
 		7. If the user wants to show the window, 
-			a. Create a window
-			b. Compute the coordinates of each node in the window
+			- Create a window
+			- Compute the coordinates of each node in the window
 		8. Paint the window
 
 * Graph
