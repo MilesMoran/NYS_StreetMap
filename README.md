@@ -1,5 +1,6 @@
 
 Created by Miles Moran
+
 CSC172 / Data Structures and Algorithms, Fall 2018
 
 * An old Readme including explanations for ALL methods is available upon request
