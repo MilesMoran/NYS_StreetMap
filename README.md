@@ -81,10 +81,10 @@ it wrong, but because I chose 2 points that weren't connected. Hah.
 
 For an explanation of the data sets, an excerpt from my professors instructions:
 "
-Intersections start with ìiî, followed by a unique string ID, and decimal 
+Intersections start with ‚Äúi‚Äù, followed by a unique string ID, and decimal 
 representations of latitude and longitude. [i.e.]
 	i IntersectionID Latitude Longitude
-Roads start with ìrî, followed by a unique string ID, and the IDs of the two 
+Roads start with ‚Äúr‚Äù, followed by a unique string ID, and the IDs of the two 
 intersections it connects. [i.e.]
 	r RoadID Intersection1ID Intersection2ID
 "
