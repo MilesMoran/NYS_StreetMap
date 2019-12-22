@@ -20,18 +20,18 @@ java StreetMap _ur.txt [--show] [--directions startIntersection endIntersection]
 The code for this program is split into 3 main classes as follows.
 * StreetMap 
 	- This is the driver class for the code. It follows an 9-step procedure:
-	   	(1) Parse the user's command-line arguments & assert formatting 
-	   	(2) Open up the input file (or throw an error)
-		(3) Create nodes from intersections
-	   	(4) Sort the nodes Alphabetically so they can be BinarySearched*
-	   	(5) Create adj-lists from roads
-		(6a) If the user wants to compute directions,
-			(7) Execute Dijkstra's algorithm
-			(8) Print out the resulting information
-		(6b) If the user wants to show the window, 
-			(7) Create a window
-			(8) Compute the coordinates of each node in the window
-		(9) Paint the window
+	   	1. Parse the user's command-line arguments & assert formatting 
+	   	2. Open up the input file (or throw an error)
+		3. Create nodes from intersections
+	   	4. Sort the nodes Alphabetically so they can be BinarySearched*
+	   	5. Create adj-lists from roads
+		6. If the user wants to compute directions,
+			a. Execute Dijkstra's algorithm
+			b. Print out the resulting information
+		7. If the user wants to show the window, 
+			a. Create a window
+			b. Compute the coordinates of each node in the window
+		8. Paint the window
 
 * Graph
 	- This class is a container for the nodes and the functionality between said nodes (e.g. executing Dijkstra's Alg.)
@@ -50,6 +50,7 @@ Furthermore, it was difficult testing for correctness with no way of knowing whe
 
 ## INCLUDED FILES
 
+```
 - Source Code: 
 	StreetMap.java
 	Graph.java
@@ -60,7 +61,7 @@ Furthermore, it was difficult testing for correctness with no way of knowing whe
 	_ur.txt
 	_monroe.txt
 	_nys.txt 
-
+```
 For an explanation of the data sets, an excerpt from my professors instructions:
 ```
 Intersections start with “i”, followed by a unique string ID, and decimal representations of latitude and longitude. [i.e.]
