@@ -9,15 +9,17 @@ CSC172 / Data Structures and Algorithms, Fall 2018
 
 This command-line program constructs a map from 1 of 3 included datasets, then shows the map, gives directions, or both. User commands are as follows:
 
+`
 java StreetMap _ur.txt [--show] [--directions startIntersection endIntersection]
 
 --show		shows the map
 --directions 	prints in the console the shortest route between start and end,
 		and draws a corresponding line if --show is active
+`
 
 The code for this program is split into 3 main classes as follows.
-- StreetMap 
-	-- This is the driver class for the code. It follows an 9-step procedure:
+* StreetMap 
+	- This is the driver class for the code. It follows an 9-step procedure:
 	   	(1) Parse the user's command-line arguments & assert formatting 
 	   	(2) Open up the input file (or throw an error)
 		(3) Create nodes from intersections
@@ -31,16 +33,13 @@ The code for this program is split into 3 main classes as follows.
 			(8) Compute the coordinates of each node in the window
 		(9) Paint the window
 
-- Graph
-	-- This class is a container for the nodes and the functionality 
-	   between said nodes (e.g. executing Dijkstra's Alg.)
+* Graph
+	- This class is a container for the nodes and the functionality between said nodes (e.g. executing Dijkstra's Alg.)
 	
-- Node
-	-- This class is a comparable that holds information about a location
-	   in geographic space (lattitude and longitude) and in the window (x and y), 
-	   as well as a mapping of each adjacent node and its respective distance.
+* Node
+	- This class is a comparable that holds information about a location in geographic space (lattitude and longitude) and in the window (x and y), as well as a mapping of each adjacent node and its respective distance.
 
-* On my To-Do list is to assign each incoming Node a unique NUMERICAL ID so that they can be accessed directly from an Array (and thus drastically improve performance). The original data includes nodes like 981023-0 and 981023-1 which makes direct access a problem.
+On my To-Do list is to assign each incoming Node a unique NUMERICAL ID so that they can be accessed directly from an Array (and thus drastically improve performance). The original data includes nodes like 981023-0 and 981023-1 which makes direct access a problem.
 
 # NOTABLE OBSTACLES
 
