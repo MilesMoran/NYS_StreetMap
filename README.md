@@ -19,7 +19,7 @@ java StreetMap _ur.txt [--show] [--directions startIntersection endIntersection]
 
 The code for this program is split into 3 main classes as follows.
 * StreetMap 
-	- This is the driver class for the code. It follows an 9-step procedure:
+	* This is the driver class for the code. It follows an 8-step procedure:
 	   	1. Parse the user's command-line arguments & assert formatting 
 	   	2. Open up the input file (or throw an error)
 		3. Create nodes from intersections
@@ -34,7 +34,7 @@ The code for this program is split into 3 main classes as follows.
 		8. Paint the window
 
 * Graph
-	- This class is a container for the nodes and the functionality between said nodes (e.g. executing Dijkstra's Alg.)
+	* This class is a container for the nodes and the functionality between said nodes (e.g. executing Dijkstra's Alg.)
 	
 * Node
 	- This class is a comparable that holds information about a location in geographic space (lattitude and longitude) and in the window (x and y), as well as a mapping of each adjacent node and its respective distance.
