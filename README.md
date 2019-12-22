@@ -20,18 +20,18 @@ java StreetMap _ur.txt [--show] [--directions startIntersection endIntersection]
 The code for this program is split into 3 main classes as follows.
 * StreetMap 
 	* This is the driver class for the code. It follows an 8-step procedure:
-	   	1. Parse the user's command-line arguments & assert formatting 
-	   	2. Open up the input file (or throw an error)
-		3. Create nodes from intersections
-	   	4. Sort the nodes Alphabetically so they can be BinarySearched*
-	   	5. Create adj-lists from roads
-		6. If the user wants to compute directions,
+	   	* Parse the user's command-line arguments & assert formatting 
+	   	* Open up the input file (or throw an error)
+		* Create nodes from intersections
+	   	* Sort the nodes Alphabetically so they can be BinarySearched*
+	   	* Create adj-lists from roads
+		* If the user wants to compute directions,
 			- Execute Dijkstra's algorithm
 			- Print out the resulting information
-		7. If the user wants to show the window, 
+		* If the user wants to show the window, 
 			- Create a window
 			- Compute the coordinates of each node in the window
-		8. Paint the window
+		* Paint the window
 
 * Graph
 	* This class is a container for the nodes and the functionality between said nodes (e.g. executing Dijkstra's Alg.)
